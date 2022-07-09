@@ -26,7 +26,7 @@ import { serve } from "https://deno.land/std@0.147.0/http/server.ts";
 import { serveDir } from "https://deno.land/std@0.147.0/http/file_server.ts";
 import { walk } from "https://deno.land/std@0.147.0/fs/mod.ts";
 
-async function find_dirs(path) {
+async function find_dirs(path: string) {
     const dirs = [];
     for await (
         const entry of walk(path, {
@@ -39,7 +39,7 @@ async function find_dirs(path) {
     return dirs;
 }
 
-async function find_files(path) {
+async function find_files(path: string) {
     const files = [];
     for await (
         const entry of walk(path, {
