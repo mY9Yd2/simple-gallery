@@ -68,7 +68,7 @@ function addFolder(folderName, folderPath) {
 function addImage(path) {
     const imageContainer = document.getElementById("images-container");
     imageContainer.innerHTML += DOMPurify.sanitize(
-        `<a href="${path}" target="_blank" rel="noopener noreferrer"><img class="img-fluid m-1 lazy" data-src="" src="${path}" loading="lazy"></a>`,
+        `<a href="${path}" target="_blank" rel="noopener noreferrer"><img class="img-fluid m-1 lazyload" data-src="${path}"></a>`,
         { ADD_ATTR: ["target"] },
     );
 }
