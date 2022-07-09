@@ -1,0 +1,24 @@
+/* NOTE: old, delete?
+img {
+    width: 480px;
+    height: 480px;
+    max-width: 480px;
+    max-height: 480px;
+    object-fit: contain;
+    border: 2px solid black;
+    margin: 2px;
+}
+*/
+
+img {
+    max-width: 480px;
+    max-height: 480px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    min-width: 250px;
+}
